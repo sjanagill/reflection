@@ -1,14 +1,13 @@
 from typing import List, Sequence
+
 from dotenv import load_dotenv
 
 load_dotenv()
 
-from dotenv import load_dotenv
 from langchain_core.messages import BaseMessage, HumanMessage
 from langgraph.graph import END, MessageGraph
 
 from chains import generate_chain, reflect_chain
-
 
 REFLECT = "reflect"
 GENERATE = "generate"
